@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чермошенцев Владимир — CV</title>
+
+  <link rel="icon" href="./favicon.ico?v=3" sizes="any">
+  <link rel="icon" type="image/png" href="./favicon.png?v=3">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --fg: #1b1d23;
+      --muted: #5b6275;
+      --head: #444;
+      --line: #e6e6e6;
+      --accent: #2b2f36;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--fg);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.45;
+      hyphens: none;
+      -webkit-hyphens: none;
+    }
+
+    p, li { text-wrap: pretty; }
+    h1, h2 { text-wrap: balance; }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 50px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #e0e3eb;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 2px var(--accent), 0 0 8px rgba(0,0,0,0.08);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name {
+      font-size: 26pt;
+      font-weight: 700;
+      letter-spacing: .3px;
+      margin: 0 0 6px 0;
+    }
+
+    .contacts, .contacts-second {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .contacts-second { margin-top: 4px; }
+
+    .contacts a, .contacts-second a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(0,0,0,.25);
+    }
+
+    .sep { margin: 0 2px; }
+
+    h2 {
+      margin: 18px 0 10px;
+      font-size: 13.5pt;
+      font-weight: 700;
+      color: var(--head);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .block { margin-bottom: 16px; }
+    .rule { height: 1px; background: var(--line); margin: 16px 0; }
+
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); }
+
+    p { margin: 0 0 5px 0; }
+
+    @media print {
+      @page { size: A4; margin: 14mm 12mm 12mm; }
+      html, body { background: white; }
+      body { font-size: 9.5pt; line-height: 1.32; }
+      .page { max-width: 100%; padding: 0; margin: 0; }
+
+      header { gap: 14px; margin-bottom: 10px; }
+      .photo {
+        width: 78px;
+        height: 78px;
+        box-shadow: none;
+        border: 1px solid var(--line);
+      }
+      .name { font-size: 21pt; margin: 0 0 4px; }
+      .contacts, .contacts-second { font-size: 8.5pt; gap: 12px; }
+      .contacts-second { margin-top: 2px; }
+
+      h2 {
+        margin: 8px 0 4px;
+        font-size: 10.5pt;
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+      .block { margin-bottom: 4px; }
+      .rule { margin: 6px 0; }
+      ul { padding-left: 16px; }
+      li { margin: 2px 0; page-break-inside: avoid; }
+      p { margin: 0 0 2px; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="photo">
+        <img src="./Photo.jpg" alt="Фото Владимира Михайловича" />
+      </div>
+
+      <div class="info">
+        <h1 class="name">Чермошенцев Владимир Михайлович</h1>
+        <div class="contacts">
+          <div>Воронеж, Россия</div><span class="sep">·</span>
+          <div><a href="mailto:vova.27.04.2003@gmail.com">vova.27.04.2003@gmail.com</a></div>
+        </div>
+        <div class="contacts-second">
+          <div><a href="tel:+79623302202">+7 (962) 330-22-02</a></div><span class="sep">·</span>
+          <div><a href="https://t.me/pigasias" target="_blank">tg: @pigasias</a></div><span class="sep">·</span>
+          <div><a href="https://github.com/Pigasias" target="_blank">github.com/Pigasias</a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="rule"></div>
+
+    <section class="block">
+      <h2>Обо мне</h2>
+      <p>Студент 1 курса магистратуры ВГТУ, Факультет: «Информационных технологий и компьютерной безопасности», Направление подготовки/Специальность: 09.04.03 Прикладная информатика, Профиль подготовки/Специализация/Программа: Управление инфраструктурными проектами на основе систем технического зрения. Активно занимаюсь разработкой web-сайтов и приложений, занимаюсь спортом!</p>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="block edu">
+      <h2>Образование</h2>
+      <p><b>ВГТУ — Воронежский Государственный Технический Университет</b></p>
+      <p>Бакалавриат, 09.03.03 «Прикладная информатика» · 2019–2025</p>
+      <p>Бюджет, успеваемость — «хорошо»</p>
+      <p>Направление подготовки/Специальность: «Прикладная информатика»</p>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="block">
+      <h2>pet-Проекты</h2>
+      <ul>
+        <li><b>В разработке...</b></li>
+        
+      </ul>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="block">
+      <h2>Hard Skills</h2>
+      <ul>
+        <li><b>Языки программирования:</b> Python&nbsp;(advanced) · HTML(advanced) · CSS(advanced) · JavaScript&nbsp;(medium) · SQL&nbsp;(basic) · React(beginner) · GoLang(beginner)</li>
+        <li><b>AI:</b> LLMs (Gemma, Gemini, DeepSeek), prompt engineering</li>
+        <li><b>Backend:</b>PostgreSQL, Oracle Database, Pyton</li>
+        <li><b>Инструменты:</b> Git, Docker, GitHub Pages</li>
+      </ul>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="block">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Самообучаемость и системное мышление</li>
+        <li>Умение доносить идеи и презентовать решения</li>
+        <li>Креативность и аналитический подход</li>
+        <li>Открытость к идеям и конструктивной критике</li>
+        <li>Умение находить решения в условиях неопределенности</li>
+        <li>Стремление к профессиональному развитию</li>
+        <li>Нацеленность на результат и готовность брать ответственность</li>
+      </ul>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="block">
+      <h2>Языки</h2>
+      <p><b>Русский</b> — родной · <b>Английский</b> — B1-B2</p>
+    </section>
+  </div>
+</body>
+</html>
